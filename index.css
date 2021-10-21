@@ -1,0 +1,30 @@
+:root {
+  --swiper-box-1__slide-height: 530px;
+}
+
+.side-bn_1{
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: 11;
+}
+.side-bn_2{
+  position: absolute;
+  left: 530px;
+  top:0;
+}
+
+.swiper-box-1{
+  position: absolute;
+  left: 560px;
+  top:65px;
+width: 1000px;
+}
+
+.swiper-box-1 .swiper {
+  height: var(--swiper-box-1__slide-height);
+  width: 900px;
+  z-index: 10;
+}
+
+
