@@ -2,34 +2,27 @@
 
 :root {
   --side-bar__width:300px;
-  --site-content-width: 1620px;
+  --site-content-width: 100vh;
 }
 
 body{
-  background-color:#EEF3FA;
+  background-color:#2A2C36;
   overflow-x: hidden;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* 탑버튼 */
-.return-top{
-  width:100px;
-  height:100px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
 
 /* 왼쪽메뉴바 */
 .side-bar {
   position: fixed;
   top:0;
-  left:0;
+  right:0;
   width:var(--side-bar__width);
   height: 100%;
-  background-color:#EEF3FA;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.418);
+  background-color:#2A2C36;
+  color: white;
   z-index: 100;
+  border-left: 1px solid #303540;
 }
 
 /* 로고 */
@@ -57,22 +50,6 @@ body{
   width: var(--site-content-width);
 }
 
-/* 탑메뉴 */
-.top-bar {
-  position: absolute;
-  top:0;
-  left:var(--side-bar__width);
-  left: 0;
-  right:80px;
-  height:50px;
-  z-index: 50;
-}
-
-.top-bar > div {
-  display: flex;
-  justify-content: end;
-  margin-top: 40px;
-}
 
 .menu_txt {
   margin-top: 30px;
@@ -81,8 +58,8 @@ body{
 .menu_txt > li{
 display: flex;
 align-items: center;
-padding-bottom: 20px;
-padding-left: 40px;
+padding-bottom: 40px;
+padding-left: 60px;
 }
 
 .menu_txt > li > img {
@@ -92,13 +69,5 @@ padding-left: 40px;
 .bn_1_2{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  top:auto;
-}
-
-.foot{
-  display: flex;
-  justify-content: center;
-  margin-top: 241px;
-  margin-bottom: 40px;
+  margin-top: 90px;
 }
